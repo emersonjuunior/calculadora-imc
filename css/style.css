@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* REMOVE AS SETINHAS DOS INPUTS TYPE NUMBER */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #0b1017;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+#mainContainer {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 5%;
+  margin-top: 10%;
+}
+
+#imagem {
+  width: 50%;
+}
+
+img {
+  width: 80%;
+  margin-left: 10%;
+}
+#containerFormulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+form {
+  width: 180%;
+  height: 400px;
+  padding-bottom: 5%;
+  border-radius: 5%;
+  background-color: #465260;
+}
+
+h3 {
+  font-size: 28px;
+  padding-top: 5%;
+  text-align: center;
+}
+
+label {
+  font-size: 20px;
+}
+
+#campos {
+  padding-left: 10%;
+}
+
+select,
+#m,
+#kg {
+  margin-bottom: 3%;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 0.5% 0% 0% 2%;
+  color: white;
+  font-size: 18px;
+  width: 90%;
+  background-color: transparent;
+}
+
+select {
+  width: 40%;
+  background-color: #6f7d8c;
+  color: white;
+  border: none;
+  outline: none;
+  height: 25px;
+}
+
+#decoration {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+
+#line1,
+#line2 {
+  width: 30%;
+  background-color: #0b1017;
+  height: 2px;
+}
+
+#circle {
+  width: 3.5%;
+  height: 15px;
+  background-color: white;
+  border-radius: 100px;
+  margin-top: -5px;
+}
+
+#divButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin-top: 6%;
+  background-color: #28afb0;
+  border: none;
+  width: 45%;
+  border-radius: 30px;
+  height: 35px;
+  font-size: 15px;
+  color: rgb(228, 215, 215);
+}
+
+button:hover {
+  cursor: pointer;
+  scale: 1.05;
+  color: white;
+  transition: 0.5s;
+}
+
+#selectSexo,
+#m,
+#kg {
+  margin-top: 2px;
+}
+
+#m,
+#kg {
+  color: #cbd5e1;
+  display: flex;
+  align-items: baseline;
+  background-color: white;
+  width: 75%;
+  height: 25px;
+  background-color: #6f7d8c;
+}
+
+#containerImc {
+  display: none;
+  justify-content: center;
+}
+
+#resultadoImc {
+  margin-top: 3%;
+  border-bottom: 2px solid #28afb0;
+  height: 48px;
+  width: 13%;
+  display: flex;
+  justify-content: center;
+}
+
+
+#second {
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2% 0% 3% 0%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 500px;
+  height: 250px;
+  border: 1px solid #465260;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+th {
+  background-color: #465260;
+}
+
+td {
+  border: 1px solid #465260;
+  padding: 8px;
+  text-align: left;
+}
+
+/* RESPONSIVIDADE TABLET*/
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  #mainContainer {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 0; 
+    justify-content: center;
+    margin: 5% auto 0 auto;
+  }
+
+  img {
+    display: none;
+  }
+
+  form {
+    width: 500px;
+    height: 420px;
+  }
+
+  select {
+    font-size: 16px;
+  }
+
+  #line1, #line2 {
+    width: 35%;
+  }
+
+  #circle {
+    width: 18px;
+    height: 17px;
+  }
+
+  button {
+    width: 70%;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  #m, #kg {
+    height: 30px;
+  }
+
+  label {
+    font-size: 22px;
+  }
+
+  #decoration {
+    margin-top: 10%;
+  }
+
+  #second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+  
+  table {
+    font-size: 15px;
+    margin: 0 auto;
+  }
+
+  #resultadoImc {
+    width: 30%;
+  }
+}
+
+/* RESPONSIVIDADE CELULAR */
+@media screen and (max-width:600px){
+
+form { 
+  width: 320px;
+  height: 350px
+}
+
+#mainContainer {
+  flex-direction: column; 
+  align-items: center; 
+  gap: 0; 
+  justify-content: center;
+  margin: 5% auto 0 auto;
+}
+
+img {
+  display: none;
+}
+
+#line1, #line2 {
+  width: 35%;
+}
+
+#circle {
+  width: 15px;
+  height: 15px;
+}
+
+#m, #kg {
+  width: 80%;
+}
+
+#second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+table {
+  width: 320px;
+  height: 135px;
+  margin: 0 auto;
+}
+
+#resultadoImc {
+  width: 60%;
+}
+
+th {
+  height: 30px;
+}
+}

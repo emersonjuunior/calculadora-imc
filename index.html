@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Calculadora IMC</title>
+  </head>
+  <body>
+    <main id="mainContainer">
+      <section id="imagem">
+        <img src="/assets/illustration1.svg" alt="Ilustração" />
+      </section>
+      <div id="containerFormulario">
+        <section id="formulario">
+          <form id="imcForm">
+            <h3>Calculadora de IMC</h3>
+            <div id="containerCampos">
+              <div id="campos">
+                <div id="campoSexo" class="campos">
+                  <label>Sexo</label> <i class="fa-solid fa-venus-mars"></i>
+                  <br />
+                  <select id="selectSexo">
+                    <option value="0">Masculino</option>
+                    <option value="1">Feminino</option>
+                  </select>
+                </div>
+                <div id="campoAltura" class="campos">
+                  <label> Altura </label> <i class="fa-solid fa-ruler"></i>
+                  <br />
+                  <i class="bi bi-rulers"></i>
+                  <div id="m">
+                    <input
+                      type="number"
+                      id="inputAltura"
+                      step="0.01"
+                      max="3"
+                      required
+                    />
+                    <span>m</span>
+                  </div>
+                </div>
+                <div id="campoPeso" class="campos">
+                  <label>Peso</label> <i class="fa-solid fa-scale-balanced"></i
+                  ><br />
+                  <div id="kg">
+                    <input
+                      type="number"
+                      id="inputPeso"
+                      step="0.01"
+                      max="999"
+                      required
+                    />
+                    <span>kg</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="decoration">
+              <div id="line1"></div>
+              <div id="circle"></div>
+              <div id="line2"></div>
+            </div>
+            <div id="divButton">
+              <button type="submit">Calcular</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <div id="containerImc">
+    <section id="resultadoImc">
+        <h2 id="imcResultado"></h2>
+    </section>
+    </div>
+    <div id="second">
+      <section id="tabela">
+        <table>
+          <tr>
+            <th width="250px">IMC (kg/m²)</th>
+            <th width="250px">Classificação</th>
+          </tr>
+          <tr id="abaixo">
+            <td>menor que 18.5</td>
+            <td>abaixo do peso</td>
+          </tr>
+          <tr id="normal">
+            <td>entre 18.5 e 24.9</td>
+            <td>peso normal</td>
+          </tr>
+          <tr id="acima">
+            <td>entre 24.9 e 30</td>
+            <td>acima do peso</td>
+          </tr>
+          <tr id="obesidade">
+            <td>acima de 30</td>
+            <td>obesidade</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
