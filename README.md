@@ -13,7 +13,7 @@
 ![calculadora-imc](https://github.com/user-attachments/assets/b1559451-e155-4c0a-bfa9-c63b4e260bfe)
 
 
-## 🎮 Como jogar  
+## 🌐 Como usar
 1. Insira sua altura em metros e seu peso em quilos nos campos de entrada.  
 2. Clique no botão para calcular o IMC.  
 3. A aplicação irá exibir seu IMC e a classificação de seu estado nutricional (baixo peso, peso normal, sobrepeso, obesidade).
